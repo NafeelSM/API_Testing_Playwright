@@ -1,0 +1,23 @@
+{
+  "name": "playwright-products-api",
+  "version": "1.0.0",
+  "description": "Playwright API automation for the reqres.in Products API (CRUD) with Allure reporting",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure": "npm run allure:generate && npm run allure:open"
+  },
+  "keywords": ["playwright", "api", "testing", "allure", "reqres"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.0",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.0"
+  }
+}
